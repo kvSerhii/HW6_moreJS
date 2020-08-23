@@ -65,23 +65,22 @@ console.log("after"); */
 let test = toJadenCase("after danger code declaration");
 console.log(test); */
 
-
-
 // 2.Напишите функцию, котораявозвращает все значенияпереданного свойства
 // из массиваобъектов. getPropertyValues(array, name);
 
-const db = [{
-        name: "testName1",
-        age: 20,
-    },
-    {
-        name: "testName2",
-        age: 21,
-    },
+const db = [
+  {
+    name: "testName1",
+    age: 20,
+  },
+  {
+    name: "testName2",
+    age: 21,
+  },
 ];
 
 function getPropertyValues(db, prop) {
-    return db.map((item) => item[prop]);
+  return db.map((item) => item[prop]);
 }
 
 console.log(getPropertyValues(db, "age"));
@@ -110,3 +109,18 @@ console.log(removeItem("kjsdfk", "ksf")); */
     return string.split("").filter((letter) => 
     vowels.includes(letter)).length;
 } */
+
+// 6 вернуть массив состоящий
+// из наибольших чисел каждого массива
+const entArray = [
+  [1, 2, 3, 9],
+  [5, 18, 0, 32],
+  [3, 5, 129, 5],
+  [28, 99, 2, 34],
+];
+
+function getMaxEntries(arr) {
+  return arr.map((subArray) => Math.max(...subArray));
+}
+
+let res = getMaxEntries(entArray);

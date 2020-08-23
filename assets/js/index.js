@@ -361,3 +361,4 @@ console.log(myArrOne.myFlat()); // [1, 2, 3, 4, 5] */
     }
 
     console.log(obj.method1().method2().method3()); */
+
